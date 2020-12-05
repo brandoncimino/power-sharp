@@ -19,8 +19,6 @@ $PowerSharpDir = "$ProfileHome/power-sharp"
 New-Alias -Name psharp -Value Import-PowerSharp
 #endregion
 
-
-
 #region Startup
 
 #endregion
