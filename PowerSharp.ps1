@@ -1,5 +1,5 @@
 function Import-CSharp(
-    [Parameter(Mandatory, ValueFromPipelineByPropertyName, Position=1)]
+    [Parameter(Mandatory, ValueFromPipelineByPropertyName, Position = 1)]
     [string[]]
     $Path
 ) {
@@ -11,12 +11,26 @@ function Import-CSharp(
         $csFiles = Get-ChildItem $Path -Recurse -Include '*.cs'
 
         foreach ($cs in $csFiles) {
-            Add-Type -Path $cs
+            try {
+                $results += @{
+                    $cs = Add-Type -Path $cs -PassThru
+                }
+            }
+            catch {
+                Write-Warning "Unable to import class(es) from $($cs.name)"
+                $results += @{
+                    $cs = $_
+                }
+            }
         }
+    }
+
+    END {
+        return $results
     }
 }
 
-function Import-PowerSharp(){
+function Import-PowerSharp() {
     Import-CSharp $PowerSharpDir
 }
 
