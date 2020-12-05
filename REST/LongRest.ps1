@@ -10,8 +10,8 @@ class RestApi {
         # Add the QueryString property
         $queryStringSplat = @{
             MemberType = "ScriptProperty"
-            Name = "QueryString"
-            Value = {
+            Name       = "QueryString"
+            Value      = {
                 $this.QueryParams | Format-QueryParameters
             }
         }
@@ -20,8 +20,8 @@ class RestApi {
         # Add the UrlParts parameter
         $urlPartsSplat = @{
             MemberType = "ScriptProperty"
-            Name = "UrlParts"
-            Value = {
+            Name       = "UrlParts"
+            Value      = {
                 $this.BaseUrl
                 $this.BasePath
                 $this.ApiVersion
@@ -33,14 +33,14 @@ class RestApi {
         # Add the FullUrl parameter
         $fullUrlSplat = @{
             MemberType = "ScriptProperty"
-            Name = "FullUrl"
-            Value = {
+            Name       = "FullUrl"
+            Value      = {
                 
             }
         }
     )
 
-    Invoke(){
+    Invoke() {
         $restSplat = @{
 
         }
@@ -53,7 +53,7 @@ function Format-QueryParameters(
     [System.Collections.IDictionary]
     $QueryParams
 ) {
-    if($null -eq $QueryParams){
+    if ($null -eq $QueryParams) {
         return
     }
 
@@ -64,9 +64,32 @@ function Format-QueryParameters(
     return $parts -join "&"
 }
 
-Join-Url(
-    [Parameter(Position=1)]
-    [string[]]$Parts
-){
+function Join-Url(
+    [Parameter(ValueFromPipeline)]
+    $PipelineParts,
 
+    [Parameter(Position = 1)]
+    $Parts
+) {
+    BEGIN {
+        $allParts = @()
+        $flatParamParts = $Parts | ForEach-Object { $_ }
+    }
+
+    PROCESS {
+        $allParts += @($PipelineParts)
+    }
+
+    END {
+        $allParts += @($flatParamParts)
+        $trimmedParts = $allParts | ForEach-Object {
+            $s = "$_"
+
+            if (![string]::IsNullOrWhitespace($s)) {
+                return $s.Trim("/")
+            }
+        }
+
+        return $trimmedParts -join "/"
+    }
 }

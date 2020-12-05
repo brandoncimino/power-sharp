@@ -3,42 +3,23 @@ using namespace System.IO
 using namespace PowerSharp
 #endregion
 
-$ProfileHome = $PSScriptRoot
-$PowerSharpDir = "$ProfileHome/PowerSharp"
+Write-Host -ForegroundColor Green "Importing BrandonProfile.ps1"
 
-function Import-PowerSharp(
-    [Parameter(ValueFromPipelineByPropertyName)]
-    [string[]]
-    $Path = $PowerSharpDir
-) {
-    BEGIN {
-        $results = @{}
-    }
+#region Variables
+$ProfileHome = [Path]::GetDirectoryName($Profile)
+$PowerSharpDir = "$ProfileHome/power-sharp"
+#endregion
 
-    PROCESS {
-        $csFiles = Get-ChildItem $Path -Recurse -Include '*.cs'
+#region Sources
+. $PowerSharpDir/REST/LongRest.ps1
+. $PowerSharpDir/PowerSharp.ps1
+#endregion
 
-        foreach ($cs in $csFiles) {
-            Add-Type -Path $cs
-        }
-    }
-}
-
+#region Aliases
 New-Alias -Name psharp -Value Import-PowerSharp
+#endregion
 
-function Find-Type(
-    [Parameter(ParameterSetName = "TypeName", Position = 1)]
-    [string]$TypeName
 
-    # [Parameter(ParameterSetName="Class")]
-    # [Type]$Type
-) {
-    if (([System.Management.Automation.PSTypeName]$TypeName).Type) {
-        return $true;
-    }
-
-    return $false;
-}
 
 #region Startup
 
