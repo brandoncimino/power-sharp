@@ -14,12 +14,12 @@ function Merge-Map(
     $First = "Left"
 ) {
     PROCESS {
-        if($Left -eq $null){
+        if ($null -eq $Left) {
             return $Right
         }
 
-        if($Right -eq $null){
-            return $Left
+        if ($null -eq $Right) {
+            return $Le
         }
 
         $first_map = $First -eq "Left" ? $Left : $Right
