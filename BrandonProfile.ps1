@@ -1,6 +1,7 @@
 #region Namespaces
 using namespace System.IO
 using namespace PowerSharp
+using namespace System.Collections
 #endregion
 
 Write-Host -ForegroundColor Green "Importing BrandonProfile.ps1"
