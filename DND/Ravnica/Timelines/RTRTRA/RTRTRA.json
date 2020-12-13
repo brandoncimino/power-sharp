@@ -5,56 +5,63 @@
       "Begin": "2015-08-20T14:41:06.7599875-05:00",
       "End": null,
       "Details": null,
-      "UUID": "440d1c9e-b450-4f54-aa31-47fa7ab0b4e8"
+      "id": 0
     },
     {
       "Name": "Nhillosh retires",
       "Begin": "2018-03-26T14:41:06.7599875-05:00",
       "End": null,
       "Details": null,
-      "UUID": "d230e55d-7d11-4b24-81cc-cd745de421d7"
+      "id": 1
     },
     {
       "Name": "Thursday night at the Gore-House",
       "Begin": "2020-10-29T20:53:18.7768479-05:00",
       "End": null,
       "Details": "Thursday night at the Gore-House, which Tenacious B signed up for to possibly give a show.",
-      "UUID": "0f7125c1-fc5f-484f-b0bb-56e67a236c40"
+      "id": 2
     },
     {
       "Name": "Bunsen MKII checks out some library books",
       "Begin": "2020-10-01T00:00:00-05:00",
       "End": "2020-11-01T00:00:00-05:00",
       "Details": "Bunsen MKII's library books are due at the *Ismeri Library*: 1. Where to Plant your Farm; 2. A History of Ravnican Expansion, vol. I; 3. Unknown",
-      "UUID": "3f940521-3c42-4687-99f2-e6ece8cb9f10"
+      "id": 3
     },
     {
-      "UUID": "4cd4d09f-7f88-466b-bf66-6d52203e888f",
       "Name": "Tenacious B checks out some library books",
       "Begin": "2020-10-28T00:00:00-05:00",
       "End": "2020-11-28T00:00:00-06:00",
-      "Details": null
+      "Details": null,
+      "id": 4
     },
     {
-      "UUID": "6e851251-57f3-44c7-9e59-2469d22d41c4",
       "Name": "The party breaches a sealed-up lab for Juzba",
       "Begin": "2020-10-29T14:00:00-05:00",
       "End": "2020-10-29T19:00:00-05:00",
-      "Details": "Juzba had a coworker years ago that she was close with. He went into Plasma Dermatology. A few years ago he stopped showing up for work. He left his lab to Juzba in his \"Professional Will\". The lab was, at some point, sealed up. Juzba asked the party to break in and secure it, as she was technically responsible for it.\n\nThe party let out a Blistercoil Weird, which fed on several electrical fires (that the party set), growing to the point where it exploded.\n\nThe party discovered a Fluxcharger trapped at the base of the lab's private Blistercoil. Unsure of how to proceed, Tara befriended the first / only nerd she could find on the street (a dry thunderstorm was coming, so most people had gone inside) - a goblin student at Prism University, Tamsyn Sweene.\n\nTamsyn informed the party that the Fluxcharger was partially sentient, and they attempted to communicate with it.\n\nThey struck a deal with the Fluxcharger: they would let it out of its confinement, so long as it (occasionally) returned to the lab and didn't cause too much of a ruckus.\n\nThe Fluxcharger was released, after which it spread its wings and flew through the thunderheads.\n\nIt then returned, filled with electricity, to thank the party.\n\nThe Fluxcharger has a particularly feminine mask that looks suspiciously like Juzba."
+      "Details": "Juzba had a coworker years ago that she was close with. He went into Plasma Dermatology. A few years ago he stopped showing up for work. He left his lab to Juzba in his \"Professional Will\". The lab was, at some point, sealed up. Juzba asked the party to break in and secure it, as she was technically responsible for it.\n\nThe party let out a Blistercoil Weird, which fed on several electrical fires (that the party set), growing to the point where it exploded.\n\nThe party discovered a Fluxcharger trapped at the base of the lab's private Blistercoil. Unsure of how to proceed, Tara befriended the first / only nerd she could find on the street (a dry thunderstorm was coming, so most people had gone inside) - a goblin student at Prism University, Tamsyn Sweene.\n\nTamsyn informed the party that the Fluxcharger was partially sentient, and they attempted to communicate with it.\n\nThey struck a deal with the Fluxcharger: they would let it out of its confinement, so long as it (occasionally) returned to the lab and didn't cause too much of a ruckus.\n\nThe Fluxcharger was released, after which it spread its wings and flew through the thunderheads.\n\nIt then returned, filled with electricity, to thank the party.\n\nThe Fluxcharger has a particularly feminine mask that looks suspiciously like Juzba.",
+      "id": 5
     },
     {
-      "UUID": "82806a44-f96e-40e1-b076-e617ef84ddfc",
       "Name": "Irida is taken over by the Powered Armor",
       "Begin": "2020-10-29T17:46:41.9077876-05:00",
       "End": null,
-      "Details": "Irida fell unconcious while wearing the Powered Armor, which proceeded to take over her body. The armor is attempting to pretend to be Irida."
+      "Details": "Irida fell unconcious while wearing the Powered Armor, which proceeded to take over her body. The armor is attempting to pretend to be Irida.",
+      "id": 6
     },
     {
-      "UUID": "951be244-0055-45ec-b17e-5e1ec59ed086",
       "Name": "Tara commissions purple wormhide armor",
       "Begin": "2020-10-26T02:46:41.9077876-05:00",
       "End": "2020-11-09T02:46:41.9077876-06:00",
-      "Details": "Tara visited her purple wormling, but it wasn't there. However, she found an amount of skin that it had apparently been shedding. She collected the most intact pieces that she could and took them to be tanned and worked into armor.\n\nThe armorer she took the skin to said that they wouldn't be able to coax out any potentially magical properties, should that even be possible; however, they would be able to craft the equivalent of studded leather armor in about two weeks.\n\nLater, the DM realized that this was probably much too short of a time, but it was already too late."
+      "Details": "Tara visited her purple wormling, but it wasn't there. However, she found an amount of skin that it had apparently been shedding. She collected the most intact pieces that she could and took them to be tanned and worked into armor.\n\nThe armorer she took the skin to said that they wouldn't be able to coax out any potentially magical properties, should that even be possible; however, they would be able to craft the equivalent of studded leather armor in about two weeks.\n\nLater, the DM realized that this was probably much too short of a time, but it was already too late.",
+      "id": 7
+    },
+    {
+      "Name": "Brunch with Juzba and Mary Greymalkin",
+      "Begin": "2020-11-05T10:00:00.4819935-06:00",
+      "End": "2020-11-05T12:00:00.4819935-06:00",
+      "Details": "",
+      "id": 8
     }
   ]
 }

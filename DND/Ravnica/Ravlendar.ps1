@@ -3,7 +3,7 @@ class HistoricalEvent {
     [DateTime]$Begin
     $End
     [string]$Details
-    $UUID = (New-Guid).Guid
+    [int]$id
 
     HistoricalEvent(){}
 

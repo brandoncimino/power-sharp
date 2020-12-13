@@ -1,6 +1,6 @@
 using namespace System.IO.Path
 
-$Today = Get-Date -Day 29 -Month 10 -Year 2020
+$Today = Get-Date -Day 30 -Month 10 -Year 2020
 
 $TimelinePath = "$PSScriptRoot/RTRTRA.json"
 
@@ -31,14 +31,14 @@ function Save-Event(
 }
 
 #region Events
-[HistoricalEvent]$bunsenBirth = [HistoricalEvent]::new()
-$bunsenBirth.Name = "Bunsen MKII is produced"
-$bunsenBirth.Begin = (Get-date).Subtract([Timespan]::FromDays(365*5.3))
-# $Global:Timeline.Events += @($bunsenBirth)
+# [HistoricalEvent]$bunsenBirth = [HistoricalEvent]::new()
+# $bunsenBirth.Name = "Bunsen MKII is produced"
+# $bunsenBirth.Begin = (Get-date).Subtract([Timespan]::FromDays(365*5.3))
+# # $Global:Timeline.Events += @($bunsenBirth)
 
-[HistoricalEvent]$nhilloshRetires = [HistoricalEvent]::new()
-$nhilloshRetires.Name = "Nhillosh retires"
-$nhilloshRetires.Begin = $bunsenBirth.Begin.AddDays(365*2.6)
+# [HistoricalEvent]$nhilloshRetires = [HistoricalEvent]::new()
+# $nhilloshRetires.Name = "Nhillosh retires"
+# $nhilloshRetires.Begin = $bunsenBirth.Begin.AddDays(365*2.6)
 # $Global:Timeline.Events += @($nhilloshRetires)
 
 
